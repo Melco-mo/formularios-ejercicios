@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios Ejercicios Prácticos</title>
+</head>
+
+<body>
+    <!-- EJERCICIOS PRACTICOS-->
+
+    <!--Formularios simples-->
+    <h1>Formulario de registro</h1>
+    <form>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="surname">Apellido</label>
+        <input type="text" surname="surname" id="surname">
+    </form>
+    <br><br><br>
+
+    <h2>Formulario Simple 2</h2>
+    <form>
+        <label for="name">Escribe tu nombre:</label>
+        <input type="text" id="name" name="name" value="Jesús"><br><br>
+        <label for="surname">Escribe tus apellidos:</label>
+        <input type="text" id="surname" name="surname" value="Fernandez Toledo"><br><br>
+        <label for="email">Escribe tu email:</label>
+        <input type="text" name="email" id="email" value="jesusfernandez@gmail.com"><br><br>
+        <input type="submit" name="submit" value="Enviar" title="este es un boton">
+    </form>
+    <br><br><br>
+
+    <h2>Formulario Simple 3</h2>
+
+    <form>
+        <label for="username">Usuario</label>
+        <input type="text" name="username" id="username"><br><br>
+        <label for="password">Contraseña:</label>
+        <input type="text" name="password" id="password"><br><br>
+        <input type="submit" name="submit" value="Enviar">
+        <input type="reset" value="borrar">
+    </form>
+    <br><br><br>
+
+
+    <h2>Formulario Simple 4</h2>
+    <form>
+        <input type="button" value="Seleccionar archivo"><br><br>
+        <input type="button" value="enviar">
+        <input type="reset" value="Borrar">
+    </form>
+
+    <br><br><br>
+
+
+    <h2>Formulario Simple 5</h2>
+    <form>
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" id="name"><br><br>
+        <label for="surname" name="surname" id="surname"> Apellidos:</label>
+        <input type="text" name="surname" id="surname"><br><br>
+        <p>Comentarios:</p>
+        <textarea name="Comments" cols="30" rows="10">Aqui la gente escribe cosas...</textarea>
+        <br><br>
+        <input type="submit" name="submit" id="submit" value="Enviar">
+        <input type="reset" name="reset" id="reset" value="Borrar">
+
+    </form>
+    <br><br><br>
+
+    <h2>Formulario Simple 6</h2>
+    <p>Datos Personales</p><br>
+    <label for="Nombre">Nombre</label><br>
+    <input type="text" name="name" id="name"><br>
+    <label for="surname">Apellido</label><br>
+    <input type="text" name="surname" id="surmane"><br>
+    <label for="dni">DNI</label><br>
+    <input type="text" name="dni" id="dni"><br>
+    <br>
+    <p>Datos de conexión</p><br>
+    <label for="username">Nombre del usuario</label><br>
+    <input type="text" name="username" id="username"><br>
+    <label for="password">Contraseña</label><br>
+    <input type="text" name="password" id="password"><br>
+    <label for="password">Repite la Contraseña</label><br>
+    <input type="text" name="password" id="password"><br>
+    <br><br><br>
+
+    <!--Rdaio Buttons-->
+    <h1>RADIO BUTTONS FORMULARIOS</h1><br>
+
+    <h2>RADIO BUTTONS 1</h2>
+    <p>Estado civil</p>
+    <form>
+        <input type="radio" id="soltero" name="estado_civil" value="soltero">
+        <label for="soltero">Soltero</label>
+        <input type="radio" id="casado" name="estado_civil" value="casado">
+        <label for="casado">Casado</label>
+        <input type="radio" id="divorciado" name="estado_civil" value="divorciado">
+        <label for="divorciado">divorciado</label>
+    </form>
+    <br><br><br>
+
+    <h2>RADIO BUTTONS 2</h2>
+    <p>Estado civil</p>
+    <form>
+        <label for="soltero">Soltero</label>
+        <input type="radio" id="soltero" name="estado_civil" value="soltero"><br>
+        <label for="casado">Casado</label>
+        <input type="radio" id="casado" name="estado_civil" value="casado"><br>
+        <label for="divorciado">divorciado</label>
+        <input type="radio" id="divorciado" name="estado_civil" value="divorciado"><br>
+    </form>
+    <br><br><br>
+
+    <!--PORQUE QUEDA ALINEADO A LA IZQUIERDA-->
+
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    </form>
+    <br><br><br>
+
+    <h2>Elige tipo de musica</h2>
+    <form action="">
+        <input type="radio" id="rock" name="musica_favorita" value="rock">
+        <label for="Rock">Rock</label><br>
+        <input type="radio" id="pop" name="musica_favorita" value="pop">
+        <label for="pop">Pop</label><br>
+        <input type="radio" id="salsa" name="musica_favorita" value="salsa">
+        <label for="salsa">Salsa</label>
+
+    </form>
+    <br><br><br>
+
+    <h1>CHECKBOX</h1>
+    <p>Tipo de musica</p>
+    <form>
+        <input type="checkbox" id="rock" name="musica_favorita" value="rock">
+        <label for="rock">Rock</label>
+        <input type="checkbox" id="pop" name="musica_favorita" value="pop">
+        <label for="pop">Pop</label>
+        <input type="checkbox" id="hindie" name="musica_favorita" value="hindie">
+        <label for="pop">hindie</label>
+    </form>
+    <br><br><br>
+
+    <h1>SELECT</h1>
+    <p>Grupos y cantantes</p>
+    <select name="entrada" multiple>
+        <optgroup label="Rock">
+            <option>Van Hallen</option>
+            <option>Metallica</option>
+            <option>Limpbizkit</option>
+        </optgroup>
+        <optgroup label="Pop">
+            <option>Lady Gaga</option>
+            <option>Britney Spears</option>
+            <option>Madonna</option>
+        </optgroup>
+        <optgroup label="Jazz">
+            <option>Alo Brazil</option>
+            <option>Hijas del Sol</option>
+            <option>Irakere</option>
+        </optgroup>
+    </select>
+    <br><br><br>
+
+    <h1>FORMULARIO MULTIPLE 1</h1>
+    <p>Rellenar</p>
+    <form>
+        <fieldset>
+            <input type="radio" id="ingles" name="language" value="ingles">
+            <label for="ingles">Inglés</label><br>
+            <input type="radio" id="aleman" name="language" value="aleman">
+            <label for="aleman">Alemán</label><br>
+            <input type="radio" id="frances" name="language" value="frances">
+            <label for="frances">Francés</label><br><br>
+            <select name="conector">
+                <option value="usb">USB</option>
+                <option value="paralelo">PARALELO</option>
+                <option value="ps2">PS2</option>
+            </select><br><br>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="surname">Apellidos</label>
+            <input type="text" id="surmane" name="surmane">
+        </fieldset> <br>
+        <fieldset>
+            <p>Indique sus preferencias</p>
+            <select name="sexo" multiple="multiple">
+                <option value="mujer">Mujer</option>
+                <option value="hombre">Hombre</option>
+            </select><br>
+            <input type="checkbox" id="sexo" name="sexo">
+            <label for="mujer">Mujer</label><br>
+            <input type="checkbox" id="sexo" name="sexo">
+            <label for="hombre">Hombre</label><br><br>
+            <label for="fecha">Elija una fecha</label>
+            <input type="date">
+        </fieldset>
+    </form> <br><br>
+
+    <h2>Formulario 2</h2>
+    <fieldset>
+        <form action="">
+            <p>Indique sus preferencias</p>
+            <label for="date">elija una fecha</label>
+            <input type="date" name="date" id="date"><br>
+            <label for="fichero">Elija un fichero</label>
+            <input type="file" name="file" id="file"><br>
+            <input type="radio" name="asignatura" id="asignatura" value="asignaturamatematicas">
+            <label for="asignaturamatematicas">Matemáticas</label>
+            <input type="radio" name="asignatura" id="asignatura" value="asignaturahistoria">
+            <label for="asignaturahistoria">Historia</label>
+            <input type="radio" name="asignatura" id="asignatura" value="asignaturageografia">
+            <label for="asignaturageografia">Geografía</label>
+            <input type="radio" name="asignatura" id="asignatura" value="asignaturalengua">
+            <label for="asignaturalengua">Lengua</label><br>
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name"><br>
+            <label for="surname">Apellidos</label>
+            <input type="text" name="surname" id="surname"><br>
+            <label for="address">Dirección</label>
+            <input type="text" name="address" id="address"><br>
+            <label for="color">Elija un color</label>
+            <input type="color"><br><br>
+            <textarea name="" id="" cols="30" rows="10">Utilice este cuadro para escribir</textarea><br>
+            <label for="date">Elija una fecha</label>
+            <input type="date"><br>
+            <select name="language">
+                <option value="ingles">Ingles</option>
+                <option value="frances">Francés</option>
+                <option value="aleman">Alemán</option>
+                <option value="español">Español</option>
+            </select><br>
+            <label for="time">Elija una hora</label>
+            <input type="time" name="time" id="time"><br>
+            <label for="file">Elija un fichero</label>
+            <input type="file"><br>
+            <input type="checkbox" name="sexo" id="sexo">
+            <label for="mujer">Mujer</label>
+            <input type="checkbox" name="sexo" id="sexo">
+            <label for="hombre">Hombre</label>
+        </form>
+    </fieldset>
+
+<!--https://oscarmaestre.github.io/lenguajes_marcas/ejercicios/formularios/anexo_formularios.html-->
+Pendiente por terminar
+
+
+
+</body>
+
+</html>
